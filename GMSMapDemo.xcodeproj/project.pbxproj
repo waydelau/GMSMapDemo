@@ -7,13 +7,24 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4085A4381645F0E966BB8BE6 /* Pods_GMSMapDemoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 164D8C1A52B642A79224CDE8 /* Pods_GMSMapDemoTests.framework */; };
+		8119BFBCAC0B282A09694332 /* Pods_GMSMapDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DFEB758C211C61CC01CDF245 /* Pods_GMSMapDemo.framework */; };
 		CF54E00A2BE9C177004A83AF /* GMSMapDemoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF54E0092BE9C177004A83AF /* GMSMapDemoApp.swift */; };
-		CF54E00C2BE9C177004A83AF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF54E00B2BE9C177004A83AF /* ContentView.swift */; };
+		CF54E00C2BE9C177004A83AF /* GMSMapContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF54E00B2BE9C177004A83AF /* GMSMapContentView.swift */; };
 		CF54E00E2BE9C179004A83AF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CF54E00D2BE9C179004A83AF /* Assets.xcassets */; };
 		CF54E0112BE9C179004A83AF /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CF54E0102BE9C179004A83AF /* Preview Assets.xcassets */; };
 		CF54E01B2BE9C179004A83AF /* GMSMapDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF54E01A2BE9C179004A83AF /* GMSMapDemoTests.swift */; };
 		CF54E0252BE9C179004A83AF /* GMSMapDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF54E0242BE9C179004A83AF /* GMSMapDemoUITests.swift */; };
 		CF54E0272BE9C179004A83AF /* GMSMapDemoUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF54E0262BE9C179004A83AF /* GMSMapDemoUITestsLaunchTests.swift */; };
+		CF54E0342BE9C64E004A83AF /* GMSMapLocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF54E0332BE9C64E004A83AF /* GMSMapLocationManager.swift */; };
+		CF54E0362BE9CBA6004A83AF /* GMSMapViewUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF54E0352BE9CBA6004A83AF /* GMSMapViewUI.swift */; };
+		CFA4BF5B2BE9D63F00CC3B09 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFA4BF5A2BE9D63F00CC3B09 /* AppDelegate.swift */; };
+		CFA4BF602BEA050800CC3B09 /* GMSMapHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFA4BF5F2BEA050800CC3B09 /* GMSMapHelper.swift */; };
+		CFA4BF6A2BEA7CB800CC3B09 /* GMSMapContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFA4BF692BEA7CB800CC3B09 /* GMSMapContentViewModel.swift */; };
+		CFA4BF6C2BEAFE3F00CC3B09 /* GMSMapViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFA4BF6B2BEAFE3F00CC3B09 /* GMSMapViewModel.swift */; };
+		CFA4BF712BEB10D000CC3B09 /* GMSMapModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFA4BF702BEB10D000CC3B09 /* GMSMapModel.swift */; };
+		CFA4BF732BEB190500CC3B09 /* GMSMapNavigationInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFA4BF722BEB190500CC3B09 /* GMSMapNavigationInfoView.swift */; };
+		D5E6F2C5205293D2BD80C4C5 /* Pods_GMSMapDemo_GMSMapDemoUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9B4B8E2A2FE8EB85B28FBDC /* Pods_GMSMapDemo_GMSMapDemoUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,9 +45,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		164D8C1A52B642A79224CDE8 /* Pods_GMSMapDemoTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GMSMapDemoTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		401A44F4104DAE04996D3939 /* Pods-GMSMapDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GMSMapDemo.debug.xcconfig"; path = "Target Support Files/Pods-GMSMapDemo/Pods-GMSMapDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		B6FC6EBEFDF075A9F6452D71 /* Pods-GMSMapDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GMSMapDemo.release.xcconfig"; path = "Target Support Files/Pods-GMSMapDemo/Pods-GMSMapDemo.release.xcconfig"; sourceTree = "<group>"; };
+		BD38A9B110E61C4B349C2099 /* Pods-GMSMapDemo-GMSMapDemoUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GMSMapDemo-GMSMapDemoUITests.release.xcconfig"; path = "Target Support Files/Pods-GMSMapDemo-GMSMapDemoUITests/Pods-GMSMapDemo-GMSMapDemoUITests.release.xcconfig"; sourceTree = "<group>"; };
 		CF54E0062BE9C177004A83AF /* GMSMapDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GMSMapDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CF54E0092BE9C177004A83AF /* GMSMapDemoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GMSMapDemoApp.swift; sourceTree = "<group>"; };
-		CF54E00B2BE9C177004A83AF /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		CF54E00B2BE9C177004A83AF /* GMSMapContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GMSMapContentView.swift; sourceTree = "<group>"; };
 		CF54E00D2BE9C179004A83AF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CF54E0102BE9C179004A83AF /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		CF54E0162BE9C179004A83AF /* GMSMapDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GMSMapDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -44,6 +59,20 @@
 		CF54E0202BE9C179004A83AF /* GMSMapDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GMSMapDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CF54E0242BE9C179004A83AF /* GMSMapDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GMSMapDemoUITests.swift; sourceTree = "<group>"; };
 		CF54E0262BE9C179004A83AF /* GMSMapDemoUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GMSMapDemoUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		CF54E0332BE9C64E004A83AF /* GMSMapLocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GMSMapLocationManager.swift; sourceTree = "<group>"; };
+		CF54E0352BE9CBA6004A83AF /* GMSMapViewUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GMSMapViewUI.swift; sourceTree = "<group>"; };
+		CFA4BF5A2BE9D63F00CC3B09 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		CFA4BF5C2BE9D71800CC3B09 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		CFA4BF5F2BEA050800CC3B09 /* GMSMapHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GMSMapHelper.swift; sourceTree = "<group>"; };
+		CFA4BF692BEA7CB800CC3B09 /* GMSMapContentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GMSMapContentViewModel.swift; sourceTree = "<group>"; };
+		CFA4BF6B2BEAFE3F00CC3B09 /* GMSMapViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GMSMapViewModel.swift; sourceTree = "<group>"; };
+		CFA4BF702BEB10D000CC3B09 /* GMSMapModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GMSMapModel.swift; sourceTree = "<group>"; };
+		CFA4BF722BEB190500CC3B09 /* GMSMapNavigationInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GMSMapNavigationInfoView.swift; sourceTree = "<group>"; };
+		DF6F1E37DC7EC591E871D156 /* Pods-GMSMapDemoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GMSMapDemoTests.debug.xcconfig"; path = "Target Support Files/Pods-GMSMapDemoTests/Pods-GMSMapDemoTests.debug.xcconfig"; sourceTree = "<group>"; };
+		DFEB758C211C61CC01CDF245 /* Pods_GMSMapDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GMSMapDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E8ED08903D098DE485CABACF /* Pods-GMSMapDemo-GMSMapDemoUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GMSMapDemo-GMSMapDemoUITests.debug.xcconfig"; path = "Target Support Files/Pods-GMSMapDemo-GMSMapDemoUITests/Pods-GMSMapDemo-GMSMapDemoUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		E9B4B8E2A2FE8EB85B28FBDC /* Pods_GMSMapDemo_GMSMapDemoUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GMSMapDemo_GMSMapDemoUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA3F47F11E90DDE4A3BB471B /* Pods-GMSMapDemoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GMSMapDemoTests.release.xcconfig"; path = "Target Support Files/Pods-GMSMapDemoTests/Pods-GMSMapDemoTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +80,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8119BFBCAC0B282A09694332 /* Pods_GMSMapDemo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -58,6 +88,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4085A4381645F0E966BB8BE6 /* Pods_GMSMapDemoTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,6 +96,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D5E6F2C5205293D2BD80C4C5 /* Pods_GMSMapDemo_GMSMapDemoUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +110,8 @@
 				CF54E0192BE9C179004A83AF /* GMSMapDemoTests */,
 				CF54E0232BE9C179004A83AF /* GMSMapDemoUITests */,
 				CF54E0072BE9C177004A83AF /* Products */,
+				DAE90DE06413D5D6110587BE /* Pods */,
+				DA887464DB7FEB8F124E00B1 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -94,10 +128,15 @@
 		CF54E0082BE9C177004A83AF /* GMSMapDemo */ = {
 			isa = PBXGroup;
 			children = (
-				CF54E0092BE9C177004A83AF /* GMSMapDemoApp.swift */,
-				CF54E00B2BE9C177004A83AF /* ContentView.swift */,
+				CFA4BF742BEB1B0100CC3B09 /* Service */,
+				CFA4BF6F2BEB10B900CC3B09 /* Mode */,
+				CFA4BF682BEA7CA400CC3B09 /* View */,
+				CFA4BF672BEA7C9800CC3B09 /* ViewModel */,
+				CFA4BF5C2BE9D71800CC3B09 /* Info.plist */,
 				CF54E00D2BE9C179004A83AF /* Assets.xcassets */,
 				CF54E00F2BE9C179004A83AF /* Preview Content */,
+				CFA4BF5A2BE9D63F00CC3B09 /* AppDelegate.swift */,
+				CF54E0092BE9C177004A83AF /* GMSMapDemoApp.swift */,
 			);
 			path = GMSMapDemo;
 			sourceTree = "<group>";
@@ -127,6 +166,65 @@
 			path = GMSMapDemoUITests;
 			sourceTree = "<group>";
 		};
+		CFA4BF672BEA7C9800CC3B09 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				CFA4BF692BEA7CB800CC3B09 /* GMSMapContentViewModel.swift */,
+				CFA4BF6B2BEAFE3F00CC3B09 /* GMSMapViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		CFA4BF682BEA7CA400CC3B09 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CF54E0352BE9CBA6004A83AF /* GMSMapViewUI.swift */,
+				CF54E00B2BE9C177004A83AF /* GMSMapContentView.swift */,
+				CFA4BF722BEB190500CC3B09 /* GMSMapNavigationInfoView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CFA4BF6F2BEB10B900CC3B09 /* Mode */ = {
+			isa = PBXGroup;
+			children = (
+				CFA4BF702BEB10D000CC3B09 /* GMSMapModel.swift */,
+			);
+			path = Mode;
+			sourceTree = "<group>";
+		};
+		CFA4BF742BEB1B0100CC3B09 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				CFA4BF5F2BEA050800CC3B09 /* GMSMapHelper.swift */,
+				CF54E0332BE9C64E004A83AF /* GMSMapLocationManager.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		DA887464DB7FEB8F124E00B1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DFEB758C211C61CC01CDF245 /* Pods_GMSMapDemo.framework */,
+				E9B4B8E2A2FE8EB85B28FBDC /* Pods_GMSMapDemo_GMSMapDemoUITests.framework */,
+				164D8C1A52B642A79224CDE8 /* Pods_GMSMapDemoTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DAE90DE06413D5D6110587BE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				401A44F4104DAE04996D3939 /* Pods-GMSMapDemo.debug.xcconfig */,
+				B6FC6EBEFDF075A9F6452D71 /* Pods-GMSMapDemo.release.xcconfig */,
+				E8ED08903D098DE485CABACF /* Pods-GMSMapDemo-GMSMapDemoUITests.debug.xcconfig */,
+				BD38A9B110E61C4B349C2099 /* Pods-GMSMapDemo-GMSMapDemoUITests.release.xcconfig */,
+				DF6F1E37DC7EC591E871D156 /* Pods-GMSMapDemoTests.debug.xcconfig */,
+				FA3F47F11E90DDE4A3BB471B /* Pods-GMSMapDemoTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -134,9 +232,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CF54E02A2BE9C179004A83AF /* Build configuration list for PBXNativeTarget "GMSMapDemo" */;
 			buildPhases = (
+				4C4B07543D01E9C13830D5E5 /* [CP] Check Pods Manifest.lock */,
 				CF54E0022BE9C177004A83AF /* Sources */,
 				CF54E0032BE9C177004A83AF /* Frameworks */,
 				CF54E0042BE9C177004A83AF /* Resources */,
+				79F7E4E07E56D1F965B94C00 /* [CP] Embed Pods Frameworks */,
+				1FE9DFDE9730E9E1091223F1 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -151,6 +252,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CF54E02D2BE9C179004A83AF /* Build configuration list for PBXNativeTarget "GMSMapDemoTests" */;
 			buildPhases = (
+				F5E87F1AADC63DAFB969B68A /* [CP] Check Pods Manifest.lock */,
 				CF54E0122BE9C179004A83AF /* Sources */,
 				CF54E0132BE9C179004A83AF /* Frameworks */,
 				CF54E0142BE9C179004A83AF /* Resources */,
@@ -169,9 +271,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CF54E0302BE9C179004A83AF /* Build configuration list for PBXNativeTarget "GMSMapDemoUITests" */;
 			buildPhases = (
+				DD80F5AC009A4FB172E3658C /* [CP] Check Pods Manifest.lock */,
 				CF54E01C2BE9C179004A83AF /* Sources */,
 				CF54E01D2BE9C179004A83AF /* Frameworks */,
 				CF54E01E2BE9C179004A83AF /* Resources */,
+				89E04BB3F05C1F3A428611CE /* [CP] Embed Pods Frameworks */,
+				948240C614E8740A0C1A2F62 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -252,13 +357,158 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		1FE9DFDE9730E9E1091223F1 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GMSMapDemo/Pods-GMSMapDemo-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GMSMapDemo/Pods-GMSMapDemo-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-GMSMapDemo/Pods-GMSMapDemo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4C4B07543D01E9C13830D5E5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GMSMapDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		79F7E4E07E56D1F965B94C00 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GMSMapDemo/Pods-GMSMapDemo-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GMSMapDemo/Pods-GMSMapDemo-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-GMSMapDemo/Pods-GMSMapDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		89E04BB3F05C1F3A428611CE /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GMSMapDemo-GMSMapDemoUITests/Pods-GMSMapDemo-GMSMapDemoUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GMSMapDemo-GMSMapDemoUITests/Pods-GMSMapDemo-GMSMapDemoUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-GMSMapDemo-GMSMapDemoUITests/Pods-GMSMapDemo-GMSMapDemoUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		948240C614E8740A0C1A2F62 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GMSMapDemo-GMSMapDemoUITests/Pods-GMSMapDemo-GMSMapDemoUITests-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GMSMapDemo-GMSMapDemoUITests/Pods-GMSMapDemo-GMSMapDemoUITests-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-GMSMapDemo-GMSMapDemoUITests/Pods-GMSMapDemo-GMSMapDemoUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DD80F5AC009A4FB172E3658C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GMSMapDemo-GMSMapDemoUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F5E87F1AADC63DAFB969B68A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GMSMapDemoTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		CF54E0022BE9C177004A83AF /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CF54E00C2BE9C177004A83AF /* ContentView.swift in Sources */,
+				CF54E0342BE9C64E004A83AF /* GMSMapLocationManager.swift in Sources */,
+				CFA4BF6C2BEAFE3F00CC3B09 /* GMSMapViewModel.swift in Sources */,
+				CF54E00C2BE9C177004A83AF /* GMSMapContentView.swift in Sources */,
 				CF54E00A2BE9C177004A83AF /* GMSMapDemoApp.swift in Sources */,
+				CFA4BF712BEB10D000CC3B09 /* GMSMapModel.swift in Sources */,
+				CFA4BF5B2BE9D63F00CC3B09 /* AppDelegate.swift in Sources */,
+				CFA4BF732BEB190500CC3B09 /* GMSMapNavigationInfoView.swift in Sources */,
+				CFA4BF602BEA050800CC3B09 /* GMSMapHelper.swift in Sources */,
+				CFA4BF6A2BEA7CB800CC3B09 /* GMSMapContentViewModel.swift in Sources */,
+				CF54E0362BE9CBA6004A83AF /* GMSMapViewUI.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -332,7 +582,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -395,7 +645,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -416,14 +666,19 @@
 		};
 		CF54E02B2BE9C179004A83AF /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 401A44F4104DAE04996D3939 /* Pods-GMSMapDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"GMSMapDemo/Preview Content\"";
+				DEVELOPMENT_TEAM = K5U88LE68C;
 				ENABLE_PREVIEWS = YES;
-				GENERATE_INFOPLIST_FILE = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = GMSMapDemo/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = GMSMapDemo;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.social-networking";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -434,7 +689,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.veo.gmsmapdemo.GMSMapDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.veo.gmsmapdemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -444,6 +699,7 @@
 		};
 		CF54E02C2BE9C179004A83AF /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B6FC6EBEFDF075A9F6452D71 /* Pods-GMSMapDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -451,7 +707,10 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"GMSMapDemo/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
-				GENERATE_INFOPLIST_FILE = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = GMSMapDemo/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = GMSMapDemo;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.social-networking";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -462,7 +721,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.veo.gmsmapdemo.GMSMapDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.veo.gmsmapdemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -472,6 +731,7 @@
 		};
 		CF54E02E2BE9C179004A83AF /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DF6F1E37DC7EC591E871D156 /* Pods-GMSMapDemoTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -491,6 +751,7 @@
 		};
 		CF54E02F2BE9C179004A83AF /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FA3F47F11E90DDE4A3BB471B /* Pods-GMSMapDemoTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -510,6 +771,7 @@
 		};
 		CF54E0312BE9C179004A83AF /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E8ED08903D098DE485CABACF /* Pods-GMSMapDemo-GMSMapDemoUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -527,6 +789,7 @@
 		};
 		CF54E0322BE9C179004A83AF /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BD38A9B110E61C4B349C2099 /* Pods-GMSMapDemo-GMSMapDemoUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

@@ -1,0 +1,46 @@
+这个应用程序是一个简单的导航应用，使用 SwiftUI 构建界面，并使用 RxSwift 进行状态管理。它允许用户在地图上选择目的地，并提供实时导航功能，以便用户可以按照所选目的地导航。
+
+特性
+* 使用 Google 地图 API 在地图上显示用户当前位置和选择的目的地。
+* 提供开始按钮，点击后开始导航到所选目的地，并实时显示行进路线。
+* 当用户到达目的地时，显示行程摘要，包括行驶路径的地图、已用时间和总行程。
+* 使用 RxSwift 进行状态管理，确保界面的响应性和可扩展性。
+
+使用的技术栈
+* SwiftUI：用于构建用户界面。
+* RxSwift：用于处理状态管理和数据流。
+* Google 地图 API：用于地图显示和导航功能。
+
+如何使用
+* 克隆项目到本地计算机。
+* 在项目根目录下运行 pod install 安装依赖。
+* 打开 .xcworkspace 文件，使用 Xcode 编辑和运行项目。
+* 在模拟器或设备上测试导航功能，并查看行程摘要。
+
+
+目录结构
+GMSMapDemo
+├── README.md
+├── Podfile
+├── Podfile.lock
+├── GMSMapDemo.xcodeproj
+├── GMSMapDemo.xcworkspace
+├── GMSMapDemo
+│   ├── View
+│   │   ├── GMSMapContentView.swift
+│   │   ├── GMSMapNavigationInfoView.swift
+│   │   └── GMSMapViewUI.swift
+│   ├── ViewModel
+│   │   └── GMSMapContentViewModel.swift
+│   │   └── GMSMapViewModel.swift
+│   ├── Service
+│   │   └── GMSMapContentViewModel.swift
+│   │   └── GMSMapViewModel.swift
+│   └── Model
+│       └── GMSMapModel.swift
+├── Resources
+│   └── Assets.xcassets
+└── Dependencies
+    ├── RxSwift
+    ├── RxCocoa
+    └── GoogleMap
