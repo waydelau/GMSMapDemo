@@ -34,16 +34,16 @@ struct GMSMapContentView: View {
                 
                 viewModel.navigateInfoSubj.subscribe { newValue in
                     navigateInfo = newValue
-                    if let duration = navigateInfo?.duration, duration == 10 {
-                        finishedNavigation()
-                    }
+//                     模拟调试代码
+//                    if let duration = navigateInfo?.duration, duration == 10 {
+//                        finishedNavigation()
+//                    }
                 }.disposed(by: disposeBag)
             }.frame(height: 40.0)
             GMSMapViewUI(viewModel: mapVM, mapView: $mapView)
                 .onAppear {
                     // 订阅权限变化
                     subscribeAuthorization()
-                    updateAuthorization()
                     
                     // 订阅定位变化
                     subscribeLocation()
@@ -113,7 +113,7 @@ extension GMSMapContentView {
             viewModel.showAuthorizationToast = true
             // 初始化地图
             mapView.isMyLocationEnabled = false
-             mapView.settings.myLocationButton = false
+            mapView.settings.myLocationButton = false
             break
         default:
             viewModel.showAuthorizationToast = false
