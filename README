@@ -34,8 +34,8 @@ GMSMapDemo
 │   │   └── GMSMapContentViewModel.swift
 │   │   └── GMSMapViewModel.swift
 │   ├── Service
-│   │   └── GMSMapContentViewModel.swift
-│   │   └── GMSMapViewModel.swift
+│   │   └── GMSMapHelper.swift
+│   │   └── GMSMapLocationManager.swift
 │   └── Model
 │       └── GMSMapModel.swift
 ├── Resources
